@@ -1,10 +1,10 @@
 {
-  "name": "gal_portal",
+  "name": "PBPPC",
   "authors": [
     "manuel.cavallaro@cimafoundation.org",
     "mirko.dandrea@cimafoundation.org"
   ],
-  "description": "Portale GAL",
+  "description": "Portale PBPPC",
   "main": "index.html",
   "license": "MIT",
   "homepage": "",
