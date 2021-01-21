@@ -1,0 +1,87 @@
+.detail-view-flex {
+    display: -ms-flexbox;
+    /* display: -webkit-flex; */
+    /* display: flex; */
+    /* -webkit-flex-direction: column; */
+    -ms-flex-direction: column;
+    /* flex-direction: column; */
+    /* -webkit-flex-wrap: nowrap; */
+    -ms-flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
+    /* -webkit-justify-content: flex-start; */
+    -ms-flex-pack: start;
+    /* justify-content: flex-start; */
+    /* -webkit-align-content: stretch; */
+    -ms-flex-line-pack: stretch;
+    /* align-content: stretch; */
+    /* -webkit-align-items: flex-start; */
+    -ms-flex-align: start;
+    /* align-items: flex-start; */
+    /* height: calc(100vh - 50%); */
+    /* overflow: auto; */
+}
+
+
+detail-view .gal-image-poi {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+
+    background-color: #3c3c3c;
+}
+
+detail-view .gal-detail-infos{
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    /* align-self: flex-start; */
+    /* overflow-y: auto; */
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    overflow: auto;
+    height: auto;
+    /* display: inherit; */
+}
+
+detail-view .gal-image-poi img{
+    object-fit: contain;
+    object-position: center;
+    height: 180px;
+    width: 350px;
+    /*position:absolute;
+    left: calc(50% - 175px);
+    top: 0px;*/
+}
+
+detail-view .gal-title
+{
+    /* position: absolute; */
+    /* width:300px; */
+    left: calc(50% - 150px);
+    top:10px;
+    text-align: center;
+    color: black;
+    /*text-shadow: 0px 0px 3px rgba(0,0,0,0.3), 0px 0px 3px rgba(0,0,0,0.3), 0px 0px 3px rgba(0,0,0,0.3);*/
+    padding: 10px;
+}
+
+detail-view .gal-box-info-details
+{
+    padding:10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+

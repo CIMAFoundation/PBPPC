@@ -1,0 +1,42 @@
+@import '../../css/_variables';
+.gal-detail-box {
+  grid-area: content;
+  strong, b {color:$color_02;}
+}
+
+.gal-detail-box {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  height: 65vh;
+  width: 40vw;
+  overflow: auto;
+  @include shadow(5px);
+  background-color: $color_inv;
+}
+
+.gal-detail-infos {
+  background-color: $color_bck ;
+  //display: none;
+  .ng-gallery {
+    //display: none;
+  }
+}
+[class*="_btn_detail"] {
+  text-shadow: 0 0 3px rgba($color_txt,0.3);
+  top:10px;
+  color:$color_txt;
+  background: $color_02;
+  padding:4px 12px;
+  border-radius:2px;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.gal-title {
+text-shadow:
+        0 0 3px rgba($color_txt, 0.25),
+        0 0 3px rgba($color_txt, 0.25),
+        0 0 3px rgba($color_txt, 0.25),
+        0 0 3px rgba($color_txt, 0.25);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portale</title>
+
+    <!-- Animate.css -->
+    <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" />
+
+
+    <!-- Bootstrap-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- lodash -->
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+
+    <!-- angular -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <!-- Leaflet -->
+    <link href="bower_components/Leaflet/dist/leaflet.css" rel="stylesheet" />
+    <script src="bower_components/Leaflet/dist/leaflet.js"></script>
+
+    <!-- leaflet plugins -->
+    <script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <link href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" rel="stylesheet"/>
+    <script src="bower_components/leaflet-bouncemarker/bouncemarker.js"></script>
+    <script src="bower_components/Leaflet.Polyline.SnakeAnim/L.Polyline.SnakeAnim.js"></script>
+    <script src="bower_components/leaflet-geometry/dist/leaflet.geometryutil.js"></script>
+    <script src="bower_components/leaflet.edgebuffer/src/leaflet.edgebuffer.js"></script>
+    <script src="bower_components/Leaflet.LineExtremities/leaflet.lineextremities.js"></script>
+
+
+    <script src="bower_components/leaflet-touch-helper/leaflet-touch-helper.js"></script>
+
+
+    <link href="bower_components/leaflet-geosearch/src/css/l.geosearch.css" rel="stylesheet" />
+    <script src="bower_components/leaflet-geosearch/src/js/l.control.geosearch.js"></script>
+    <script src="bower_components/leaflet-geosearch/src/js/l.geosearch.provider.openstreetmap.js"></script>
+
+
+    <link href="bower_components/Leaflet.Elevation/dist/Leaflet.Elevation-0.0.2.css" rel="stylesheet" />
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/Leaflet.Elevation/dist/Leaflet.Elevation-0.0.2.src.js"></script>
+    <!-- patch per avere la visualizzazione del marker sulla mappa -->
+    <script src="js/Leaflet-Elevation-Patch.js"></script>
+
+
+    <!-- Angular animate -->
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+
+    <!-- Bootstrap UI -->
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- angular media queries -->
+    <script type='text/javascript' src='bower_components/angular-media-queries/match-media.js'></script>
+
+    <!-- Color Thief -->
+    <script src="bower_components/color-thief/dist/color-thief.min.js"></script>
+    <script src="bower_components/ngColorThief/angular-colorthief.min.js"></script>
+
+    <!-- ng gallery -->
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="js/ngGallery/src/css/ngGallery.css">
+    <script type="text/javascript" src="js/ngGallery/src/js/ngGallery.js"></script>
+
+    <!-- GAL APP -->
+    <script src="app.js"></script>
+    <!--<link href="app.css" rel="stylesheet" />-->
+
+    <!-- Filters -->
+    <script src="filters/Filters.js" type="text/javascript"></script>
+
+    <!-- SERVICES -->
+    <script src="services/DataServices.js" type="text/javascript"></script>
+    <script src="services/MapService.js" type="text/javascript"></script>
+    <script src="services/ProfilesService.js" type="text/javascript"></script>
+    <script src="services/IconService.js" type="text/javascript"></script>
+    <!-- components -->
+    <script src="components/main-view/mainView.js" type="text/javascript"></script>
+    <link href="components/main-view/mainView_old.css" rel="stylesheet"/>
+    <link href="components/main-view/mainView.css" rel="stylesheet" />
+    
+
+    <script src="components/map-view/mapView.js" type="text/javascript"></script>
+    <link href="components/map-view/mapView.css" rel="stylesheet"/>
+
+    <script src="components/detail-view/detailView.js" type="text/javascript"></script>
+    <link href="components/detail-view/detailView_old.css" rel="stylesheet"/>
+    <link href="components/detail-view/detailView.css" rel="stylesheet"/>
+
+    <script src="components/list-view/listView.js" type="text/javascript"></script>
+    <link href="components/list-view/listView_old.css" rel="stylesheet"/>
+    <link href="components/list-view/listView.css" rel="stylesheet"/>
+
+    <script src="components/category-view/categoryView.js" type="text/javascript"></script>
+    <link href="components/category-view/categoryView.css" rel="stylesheet"/>
+
+    <script src="components/landing-page/landingPage.js" type="text/javascript"></script>
+    <link href="components/landing-page/landingPage_old.css" rel="stylesheet"/>
+    <link href="components/landing-page/landingPage.css" rel="stylesheet"/>
+    <!-- GAL APP -->
+
+    <!-- GAL icon set -->
+    <!--<link rel="stylesheet" href="gal-icons/gal-icons/style.css"></head>-->
+
+    <!-- PORTALE icon set -->
+    <link rel="stylesheet" href="portale-icons/style.css"></head>
+
+    <!--gfont-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Varela+Round" rel="stylesheet">
+
+</head>
+<body id="app" ng-app="galApp" scroll="no">
+    
+    <div ng-view class="animated-view"></div>
+    <script src="portale-icons/liga.js"></script>
+</body>
+</html>

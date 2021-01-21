@@ -1,0 +1,168 @@
+<div>
+
+   <!-- <script src="components/landing-page/js/scroll.js"></script>
+
+    &lt;!&ndash; Video Full Screen &ndash;&gt;
+    <div class="gal_fullscreen-bg hidden-xs">
+        <video loop muted autoplay poster="components/landing-page/video/img_cover.png" class="gal_fullscreen-bg__video">
+            <source src="components/landing-page/video/gal_promo.webm" type="video/webm">
+            <source src="components/landing-page/video/gal_promo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <a href="#top">
+        <div id="top_scroll" class="scroll_hide">
+            <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+        </div>
+    </a>
+-->
+    <!-- Top  -->
+    <div class="gal_banner gal_top " id="top">
+        <div class="container-fluid">
+            <div class="row" style="">
+                <div class="col-xs-10 col-sm-9 col-md-8 col-lg-8" >
+                    <div class="gal_header">
+                        <img class="hidden-xs" src="img/loghi/logo_dpc@2x.png" alt="">
+                        <img class="hidden-xs" src="img/loghi/logo_cima@2x.png" alt="">
+                        <img class="hidden-xs" src="img/loghi/logo_acrotec@2x.png" alt="">
+                        <div class="title">
+                            <span class="color_D">Portale</span>
+                            <span class="color_D">Buone </span>
+                            <span class="color_D">Pratiche di </span>
+                            <b class="color_D ">Protezione Civile</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2 col-sm-3 col-md-4 col-lg-4">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle gal_btn_green_menu collapsed" data-toggle="collapse" data-target="#gal_nav" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="gal_nav">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#gal">Home</a></li>
+                                    <li><a href="#media">MEDIA</a></li>
+                                    <li><a href="index.html#/main/mappavuota" class="gal_btn_green_menu">ACCEDI</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Parallax effect -->
+    <div class="gal_parallax hidden-xs"></div>
+
+    <div class="gal_parallax_mobile visible-xs"></div>
+
+    <div class="container-fluid" id="gal">
+        <div class="row gal_session_white text-center">
+            <!-- Description -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Che cosa è questo portale</h2>
+                <hr>
+                <p class="text-justify">
+                    Il Portale delle Buone Pratiche raccoglie buone pratiche di governance relative a procedimenti amministrativi finalizzati alla mitigazione del rischio idrogeologico e idraulico in termini di protezione civile ed in cui la partecipazione dei cittadini diviene la cifra portante.
+                    <br><br>
+                    Ampio spazio trovano i procedimenti partecipati di pianificazione di protezione civile, sempre più diffusi in Italia, senza tuttavia dimenticare altre procedure di partecipazione tra cui quella relativa alla Pianificazione di Gestione del Rischio Alluvione (PGRA).
+                    <br><br>
+                    Le pratiche mappate sul Portale si candidano ad essere procedure amministrative innovative caratterizzate dal contributo della cittadinanza e degli stakeholder che le informa in maniera innovativa e le rende più efficaci e trasparenti, divenendo di fatto luoghi di coordinamento tra attori pubblici e privati.
+                    <br><br>
+                    Obiettivo del Portale delle Buone pratiche è quello di fornire ai diversi soggetti preposti elementi utili per la progettazione di procedimenti partecipati in tema di protezione civile, fornire un quadro nazionale sullo sviluppo di tali procedimenti e di promuovere e favorire la diffusione della conoscenza e della cultura della protezione civile.
+                    <br><br>
+
+
+                </p>
+                <br>
+                <a href="index.html#/main/mappavuota" class="btn btn-lg gal_btn_green_menu text-center">VAI AL PORTALE</a>
+            </div>
+
+        </div>
+
+        <!-- Page Features -->
+        <div class="row gal_session_white text-center">
+
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 hero-feature animated fadeInUp"
+                 ng-if="profile.profile_id != 'mappavuota'"
+                 ng-repeat="profile in $ctrl.profiles"
+                 ng-style="{'-webkit-animation-delay': $index*100 + 'ms', 'animation-delay': $index*100 + 'ms'}">
+
+                <a href="#/main/{{profile.profile_id}}">
+                    <div class="gal_min_height gal_box_category" style="background-image:url({{profile.image}}); background-repeat: no-repeat; background-size: cover; background-position: top center">
+
+                        <img src="components/landing-page/img/null_image.png" alt="" class="img-responsive">
+                        <div class="gal_icon_type_caption">
+                            <h2>{{profile.title}}</h2>
+                            <p>{{profile.description}}</p>
+                            <h3>{{profile.profile_id}}</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          <!--  &lt;!&ndash; Partner &ndash;&gt;
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="partner">
+                &lt;!&ndash; elenco loghi istituzioni &ndash;&gt;
+                <h2>Partner del progetto</h2>
+                <hr />
+                <img src="img/loghi/Repubblica_Italiana.jpg" alt="" class="gal_img_logo" />
+                &nbsp;&nbsp;
+                <img src="img/loghi/Regione_Liguria.jpg" alt="" class="gal_img_logo" />
+                &nbsp;&nbsp;
+                <img src="img/loghi/Logo_Fondazione_Cima.jpg" alt="" class="gal_img_logo" />
+                &nbsp;&nbsp;
+                <img src="img/loghi/Logo_LEADER.jpg" alt="" class="gal_img_logo" />
+                &nbsp;&nbsp;
+                <img src="img/loghi/Logo_PSR.jpg" alt="" class="gal_img_logo" style="max-width:220px;" />
+            </div>-->
+
+        </div>
+
+        <!--&lt;!&ndash;media&ndash;&gt;
+        <div class="row gal_session_black" id="media">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Media Gallery</h2>
+                <hr />
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="flex">
+                    <img src="img/altri_procedimenti.jpg" alt="">
+                    <img src="img/piani_partecipati.jpg" alt="">
+                    
+                </div>
+                
+            </div>
+
+            &lt;!&ndash;<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                <iframe src="https://player.vimeo.com/video/183453420" style="width:100%;" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>&ndash;&gt;
+        </div>
+-->
+
+    </div>
+
+    <footer class="gal_banner gal_footer">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <small>
+                    **
+                    Il Portale delle Buone Pratiche è un prodotto realizzato da Fondazione CIMA, con il supporto della Fondazione ACROTEC, nell’ambito dell’Attuazione dell'Accordo Quadro per il triennio 2017-2020, stipulato il 28.12.2016 - ATTIVITÀ PER L'ANNO 2018 con il Dipartimento della Protezione Civile – Presidenza del Consiglio dei Ministri.
+
+                </small>
+                <br />
+                <!--<p>Copyright 2019 - L'Altra via del Finalese</p>-->
+            </div>
+        </div>
+    </footer>
+
+</div>

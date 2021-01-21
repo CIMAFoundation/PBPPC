@@ -1,0 +1,166 @@
+map-view .fill-container{
+    position:absolute;
+    top: 0px;
+    /*margin-tobower p: 100px;*/
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+.marker-img{
+    object-fit: contain;
+    object-position: center;
+    height: 100px;
+    width: 100px;
+    border-radius:5px;
+}
+
+.leaflet-popup-content-wrapper {
+    color: rgba(63, 50, 33, 1); /*marrone*/
+
+    background-color: rgba(255,255,255,0.9);
+}
+.leaflet-popup-tip {
+    visibility: hidden;
+}
+
+.poi-popup{
+    width: 100px;
+    /* object-fit: contain; */
+}
+
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+    -webkit-animation: fadeIn .5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeIn .5s; /* Firefox < 16 */
+    -ms-animation: fadeIn .5s; /* Internet Explorer */
+    -o-animation: fadeIn .5s; /* Opera < 12.1 */
+    animation: fadeIn .5s;
+}
+
+.awesome-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awesome-marker i {
+    font-size: 20px;
+    margin-top: -5px;
+    /* margin-left: 1px; */
+}
+
+
+
+/* info on section */
+
+
+.gal-section-info {
+    color:#3f3221;
+    background-color: rgba(255,255,255,0.8);
+    margin-bottom:0px!important;
+    padding: 20px;
+    width: 400px;
+    min-height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    margin:0px;
+    transition: all ease-in-out 200ms;
+}
+
+.gal-section-info.hide-info{
+    height: 30px;
+    min-height: 30px;
+    width: 50px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.leaflet-control.elevation.hide-info{
+    height: 0px;
+    min-height: 0px;
+    width: 50px;
+    opacity: 0;
+}
+
+/* elevation control theme */
+.gal-theme .leaflet-control.elevation{
+    transition: all ease-in-out 200ms;
+    overflow-x: visible;
+}
+
+
+
+.gal-theme .leaflet-control.elevation .background {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -ms-border-radius: 0px 0px 5px 5px;
+    -o-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.gal-theme .leaflet-control.elevation .axis line,
+.gal-theme .leaflet-control.elevation .axis path {
+    fill: none;
+    stroke: #0d1821;
+    stroke-width: 2
+}
+.gal-theme text{
+    stroke:#3f3221;
+}
+.gal-theme .leaflet-control.elevation .axis line, .gal-theme .leaflet-control.elevation .axis path{
+    stroke:#3f3221;
+}
+
+.gal-theme .leaflet-control.elevation .area {
+    fill: #95be0d
+}
+.gal-theme .leaflet-control.elevation .mouse-focus-line {
+    pointer-events: none;
+    stroke-width: 1;
+    stroke: #3f3221
+}
+.gal-theme .leaflet-control.elevation .elevation-toggle {
+    cursor: pointer;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .4);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    background: url(/bower_components/Leaflet.Elevation/dist/images/elevation.png) no-repeat center center #f8f8f9
+}
+.gal-theme .leaflet-control.elevation-collapsed .background {
+    display: none
+}
+.gal-theme .leaflet-control.elevation-collapsed .elevation-toggle {
+    display: block
+}
+.gal-theme .leaflet-control.elevation .mouse-drag {
+    fill: rgba(63, 50, 33, 0.5)
+}
+.gal-theme .leaflet-overlay-pane .height-focus {
+    stroke: #3f3221;
+    fill: #3f3221
+}
+.gal-theme .leaflet-overlay-pane .height-focus.line {
+    pointer-events: none;
+    stroke-width: 2
+}
+
+
+.leaflet-control-geosearch form{
+    height: 30px;
+}
+
+.leaflet-control-geosearch form input {
+    line-height: normal!important;
+}
+
+
+
+
+.arrowIcon {
+    color: #122238;
+    text-shadow:0 0 2px rgba(255,255,255,0.75), 0 0 2px rgba(255,255,255,0.75), 0 0 2px rgba(255,255,255,0.75);
+}

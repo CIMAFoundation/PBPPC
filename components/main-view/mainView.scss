@@ -1,0 +1,157 @@
+@import '../../css/_variables';
+$height_content: calc(100vh - #{$height_header + $height_footer + ($gap * 2)});
+
+
+// ****************************************************
+// GRID main view
+// ****************************************************
+
+
+
+main-view {
+  display:grid;
+  &.desktop {
+    grid-template-areas:   "top top"
+    "left content"
+    "footer footer";
+    grid-gap:$gap;
+    grid-template-rows: 1fr $height_content minmax(0, auto);
+    grid-template-columns:1fr 65%;
+  }
+  &.mobile {
+    grid-template-areas:unset;
+    grid-template-rows: 1fr minmax(0, auto) 100vh  minmax(0, auto);
+    grid-template-columns:100%;
+    grid-gap:inherit;
+  }
+}
+
+
+
+.desktop {
+  .gal_header {grid-area: top; }
+  .gal_left_box {grid-area: left;}
+  .gal_map_box {grid-area: content; }
+}
+.mobile {
+
+  .gal_left_box {
+    display: none;
+    grid-area: 2/1/3/2;
+    &.open {
+      display: flex;
+
+    }
+  }
+  .gal_map_box {grid-area: 3/1/4/2;}
+}
+
+
+
+.gal_header {
+  height: $height_header;
+
+}
+
+
+
+// ****************************************************
+// body main view
+// ****************************************************
+
+
+body {
+  color: $color_inv;
+  font-family: 'Varela Round', sans-serif;
+  //font-family: 'Comfortaa', cursive;
+  .strong { font-weight: 800;}
+
+}
+b, strong, h1, h2, h3, h4  {
+  //font-family: 'Fredoka One', cursive;
+  //letter-spacing: 1px;
+}
+h1, h2, h3, h4 {text-transform: uppercase;}
+
+main-view {background: $color_bck;}
+
+
+.gal_left_box, .gal_map_box, .gal-header {
+  position:relative;
+
+}
+
+
+// ****************************************************
+// HEADER LOGO
+// ****************************************************
+
+.gal_header {
+  display:flex; align-items:center;
+  img {
+    height: 100%;
+    width: auto;
+  }
+  .title {
+    font-size:2em;
+    letter-spacing:-0.03em;
+  }
+}
+
+a {
+  &:hover, &:focus {
+    color: $color_txt;
+    transform: scale(1.1);
+  }
+  &.active, &.btn.active {
+    box-shadow: none;
+    &:hover, &:focus {
+      transform: scale(1);
+    }
+  }
+  &:hover, &:focus, &.active {
+    @include multiple-transition(all background-color, 500ms);
+    transform: scale(1.1);
+
+  }
+
+}
+
+
+.gal_header {
+  height: $height_header;
+  .gal_btn_green_menu + img {margin-left:1em;}
+}
+
+
+
+
+// ****************************************************
+// SET color test
+// ****************************************************
+
+.color {
+  &_A {color: rgba($color_inv, 0.7)}
+  &_B {color: rgba($color_inv, 0.7)}
+  &_C {color: rgba($color_inv, 0.7)}
+  &_D {color: $color_inv}
+
+}
+
+
+
+
+// ****************************************************
+// input search
+// ****************************************************
+
+
+.form-group {
+  margin: 0;
+
+  .input-group-addon {background-color: $color_01; color:$color_inv; border-radius:0;}
+  .form-control {border:0;}
+  .input-group-addon, .form-control {border:2px solid $color_inv;}
+
+}
+

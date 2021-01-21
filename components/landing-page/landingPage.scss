@@ -1,0 +1,124 @@
+@import '../../css/_variables';
+//@import '../../css/typenugget.css';
+
+
+landing-page a{
+  color:$color_02;
+}
+
+.gal_btn_green_menu {
+  background: $color_inv;
+  border-radius: 0 ;
+  padding: 10px;
+  color:$color_txt;
+}
+
+.gal_header {
+  //display:inline;
+  //align-items:center;
+}
+
+.gal_parallax,
+.gal_parallax_mobile {
+  background-image: url('../../img/Home.jpg');
+  background-attachment: fixed;
+  //background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gal_parallax {
+    background-position: top;
+    height:800px;
+    @media screen and (max-width: $breakpoint_xlg) {height:500px;}
+    @media screen and (max-width: $breakpoint_lg) {height:300px;}
+
+
+}
+.gal_parallax_mobile {
+  background-position: top;
+  @media screen and (max-width: $breakpoint_xlg) {}
+    @media screen and (max-width: $breakpoint_md) {height:250px;}
+    @media screen and (max-width: $breakpoint_xs) {height:200px;}
+
+
+}
+
+
+
+.gal_banner {
+  &.gal_footer {
+    background-color: $color_01;
+    color:$color_inv;
+  }
+
+  &.gal_top {
+    .row {
+      display: flex;
+      align-items: center;
+      .navbar {margin-bottom:0;}
+    }
+
+  }
+}
+
+#gal_nav {
+  li, li + li {margin:0 15px;}
+}
+
+.title {line-height: 1;}
+@media screen and (max-width: 980px) {
+  .gal_header .title {
+    font-size:1.6em;
+    letter-spacing: -0.05em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gal_header .title {
+    font-size:1em;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .navbar-collapse{
+    &.collapse,&.collapsing {
+      position: absolute;
+      top: $height_header;
+      right:0;
+      .nav.navbar-nav{
+        width: auto;
+        margin:auto;
+        display: flex;
+        flex-direction:column;
+        padding:1em;
+        background: $color_pick;
+
+      }
+    }
+  }
+}
+
+body, html {
+  //color: $color_txt;
+  background: $color_bck;
+  //font-size: 16px;
+  line-height: 1.735;
+  //font-weight: 100;
+  //background: $color_bck url('../../img/img-noise-256x256.png') 0 0 repeat ;
+}
+.gal_session_black{
+  background-color: $color_01;
+}
+
+#media img {
+    width: 200px;
+    margin: 1em;
+  }
+
+
+  landing-page {background: $color_bck;}
+  hr {
+    @include hr;
+
+  }
+  

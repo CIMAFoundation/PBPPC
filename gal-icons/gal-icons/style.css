@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'gal';
+  src:  url('fonts/gal.eot?pl96as');
+  src:  url('fonts/gal.eot?pl96as#iefix') format('embedded-opentype'),
+    url('fonts/gal.ttf?pl96as') format('truetype'),
+    url('fonts/gal.woff?pl96as') format('woff'),
+    url('fonts/gal.svg?pl96as#gal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="gal-icons-"], [class*=" gal-icons-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gal' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gal-icons-accoglienza:before {
+  content: "\e900";
+}
+.gal-icons-aziendeagricole:before {
+  content: "\e901";
+}
+.gal-icons-enogastronomia2:before {
+  content: "\e902";
+}
+.gal-icons-fauna2:before {
+  content: "\e903";
+}
+.gal-icons-flora2:before {
+  content: "\e904";
+}
+.gal-icons-geologiatematica2:before {
+  content: "\e905";
+}
+.gal-icons-manifestazionioni2:before {
+  content: "\e906";
+}
+.gal-icons-prodottiTipici:before {
+  content: "\e907";
+}
+.gal-icons-sportout2:before {
+  content: "\e908";
+}
+.gal-icons-storia:before {
+  content: "\e909";
+}
+.gal-icons-bnb3:before {
+  content: "\e90a";
+}
+.gal-icons-tradizionireligiose2:before {
+  content: "\e90b";
+}
+.gal-icons-accoglienza_altro2:before {
+  content: "\e90c";
+}
+.gal-icons-accoglienzaP2:before {
+  content: "\e90d";
+}
+.gal-icons-agriturismi:before {
+  content: "\e90e";
+}
+.gal-icons-alberghi:before {
+  content: "\e90f";
+}
+.gal-icons-albericentenari:before {
+  content: "\e910";
+}
+.gal-icons-alberimonumentali2:before {
+  content: "\e911";
+}
+.gal-icons-altrevoce_artimestieri:before {
+  content: "\e912";
+}
+.gal-icons-altrevoce_tradculturali:before {
+  content: "\e913";
+}
+.gal-icons-altrevoce_tradrurali:before {
+  content: "\e914";
+}
+.gal-icons-altrevociP:before {
+  content: "\e915";
+}
+.gal-icons-avifauna:before {
+  content: "\e916";
+}
+.gal-icons-aziendeagricole_olivicole:before {
+  content: "\e917";
+}
+.gal-icons-aziendeagricole_orto:before {
+  content: "\e918";
+}
+.gal-icons-aziendeagricole_zootecniche:before {
+  content: "\e919";
+}
+.gal-icons-aziendeagricoleP:before {
+  content: "\e91a";
+}
+.gal-icons-bnb2:before {
+  content: "\e91b";
+}
+.gal-icons-campeggi2:before {
+  content: "\e91c";
+}
+.gal-icons-endemismivegetali2:before {
+  content: "\e91d";
+}
+.gal-icons-falesie:before {
+  content: "\e91e";
+}
+.gal-icons-fauna_mamiferi:before {
+  content: "\e91f";
+}
+.gal-icons-faunaminore2:before {
+  content: "\e920";
+}
+.gal-icons-faunaP2:before {
+  content: "\e921";
+}
+.gal-icons-floraP2:before {
+  content: "\e922";
+}
+.gal-icons-formazioniarboree2:before {
+  content: "\e923";
+}
+.gal-icons-formazioniarbustive:before {
+  content: "\e924";
+}
+.gal-icons-funghitartufi2:before {
+  content: "\e925";
+}
+.gal-icons-geologia_formparticolari2:before {
+  content: "\e926";
+}
+.gal-icons-geologiaP2:before {
+  content: "\e927";
+}
+.gal-icons-grotta2:before {
+  content: "\e928";
+}
+.gal-icons-manifestazioniculturali2:before {
+  content: "\e929";
+}
+.gal-icons-manifestazioniP:before {
+  content: "\e92a";
+}
+.gal-icons-pesci:before {
+  content: "\e92b";
+}
+.gal-icons-piantearomatiche2:before {
+  content: "\e92c";
+}
+.gal-icons-prodottisottobosco:before {
+  content: "\e92d";
+}
+.gal-icons-prodottitipici:before {
+  content: "\e92e";
+}
+.gal-icons-prodtipici_antichecultivar:before {
+  content: "\e92f";
+}
+.gal-icons-restaurant2:before {
+  content: "\e930";
+}
+.gal-icons-rettili:before {
+  content: "\e931";
+}
+.gal-icons-sport_aerolmodellismo2:before {
+  content: "\e932";
+}
+.gal-icons-sport_bike2:before {
+  content: "\e933";
+}
+.gal-icons-sport_canoing2:before {
+  content: "\e934";
+}
+.gal-icons-sport_climbing:before {
+  content: "\e935";
+}
+.gal-icons-sport_deltaplano:before {
+  content: "\e936";
+}
+.gal-icons-sport_horsetrek:before {
+  content: "\e937";
+}
+.gal-icons-sport_pesca:before {
+  content: "\e938";
+}
+.gal-icons-sport_treking2:before {
+  content: "\e939";
+}
+.gal-icons-sport_vela2:before {
+  content: "\e93a";
+}
+.gal-icons-sportdimenticati2:before {
+  content: "\e93b";
+}
+.gal-icons-spotoutdoorP2:before {
+  content: "\e93c";
+}
+.gal-icons-storiaP2:before {
+  content: "\e93d";
+}
+.gal-icons-tradizionienogastronomiche:before {
+  content: "\e93e";
+}
+.gal-icons-tradizionimusicali:before {
+  content: "\e93f";
+}
+.gal-icons-tradizionisportive:before {
+  content: "\e940";
+}
+

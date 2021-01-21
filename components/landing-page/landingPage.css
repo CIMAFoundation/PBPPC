@@ -1,0 +1,98 @@
+/*
+$color_01:#123c69;
+$color_02:#edc7b7;
+$color_pick:#eee2dc;
+$color_03:#bab2b5;
+$color_04:#F93900;
+$color_05:#ac3b61;
+*/
+landing-page a {
+  color: #61FBFF; }
+
+.gal_btn_green_menu {
+  background: #eee;
+  border-radius: 0;
+  padding: 10px;
+  color: #444; }
+
+.gal_parallax,
+.gal_parallax_mobile {
+  background-image: url("../../img/Home.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.gal_parallax {
+  background-position: top;
+  height: 800px; }
+  @media screen and (max-width: 1280px) {
+    .gal_parallax {
+      height: 500px; } }
+  @media screen and (max-width: 1024px) {
+    .gal_parallax {
+      height: 300px; } }
+
+.gal_parallax_mobile {
+  background-position: top; }
+  @media screen and (max-width: 768px) {
+    .gal_parallax_mobile {
+      height: 250px; } }
+  @media screen and (max-width: 500px) {
+    .gal_parallax_mobile {
+      height: 200px; } }
+
+.gal_banner.gal_footer {
+  background-color: #003a70;
+  color: #eee; }
+.gal_banner.gal_top .row {
+  display: flex;
+  align-items: center; }
+  .gal_banner.gal_top .row .navbar {
+    margin-bottom: 0; }
+
+#gal_nav li, #gal_nav li + li {
+  margin: 0 15px; }
+
+.title {
+  line-height: 1; }
+
+@media screen and (max-width: 980px) {
+  .gal_header .title {
+    font-size: 1.6em;
+    letter-spacing: -0.05em; } }
+@media screen and (max-width: 500px) {
+  .gal_header .title {
+    font-size: 1em; } }
+@media screen and (max-width: 767px) {
+  .navbar-collapse.collapse, .navbar-collapse.collapsing {
+    position: absolute;
+    top: 4em;
+    right: 0; }
+    .navbar-collapse.collapse .nav.navbar-nav, .navbar-collapse.collapsing .nav.navbar-nav {
+      width: auto;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1em;
+      background: #122238; } }
+body, html {
+  background: #122238;
+  line-height: 1.735; }
+
+.gal_session_black {
+  background-color: #003a70; }
+
+#media img {
+  width: 200px;
+  margin: 1em; }
+
+landing-page {
+  background: #122238; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #61FBFF, rgba(0, 0, 0, 0)); }
+
+/*# sourceMappingURL=landingPage.css.map */

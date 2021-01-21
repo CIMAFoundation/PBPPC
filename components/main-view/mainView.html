@@ -1,0 +1,179 @@
+<div class="gal_header">
+    <!--<img src="img/altravia_logo_tr.png" alt="" />-->
+    <!--<img src="img/laltravia.png" alt="" style="max-width:35%;" >-->
+    <a href="" class="gal_btn_green_menu"
+       ng-click="$ctrl.menuOpen=!$ctrl.menuOpen"
+       ng-class="{'active':$ctrl.menuOpen}"
+       ng-if="$ctrl.media=='mobile'">
+        <i class="fa fa-{{$ctrl.menuOpen?'remove':'bars'}}"></i>
+    </a>
+
+    <img src="img/loghi/logo_dpc@2x.png" alt="">
+    <img src="img/loghi/logo_cima@2x.png" alt="">
+    <img src="img/loghi/logo_acrotec@2x.png" alt="">
+    <div class="title">
+        <span class="color_A">Portale</span>
+        <span class="color_B">Buone </span>
+        <span class="color_C">Pratiche di </span>
+        <b class="color_D ">Protezione Civile</b>
+    </div>
+
+</div>
+
+<div class="gal_left_box" ng-class="{'open':$ctrl.menuOpen}">
+    <!-- Box icone categorie -->
+    <div class="gal-panel-icon flex" ng-show="!$ctrl.selectedCategory">
+        <!--ng-style="{'-webkit-animation-delay': $index*50 + 'ms', 'animation-delay': $index*50 + 'ms'}"-->
+        <div ng-repeat="(cat_key, cat) in $ctrl.data"
+             class="animated fadeIn gal-category-icon flex col"
+             uib-tooltip="{{cat.name}}"
+             tooltip-placement="bottom">
+            <div
+                class="cat_img"
+                ng-click="$ctrl.selectCategory(cat_key)"
+            >
+
+                <img ng-src="{{cat.thumb | djangoMedia}}" alt=""
+                     ng-class="{'gal-icon-active': $ctrl.selectedCategory_key===cat_key}"
+
+                />
+            </div>
+
+            <div class="cat_badge"
+                  ng-click="$ctrl.switchCategory(cat_key)"
+                  uib-tooltip="{{$ctrl.someSelected(cat_key)?'deseleziona tutte':'seleziona tutte'}}"
+                  tooltip-placement="top"
+                  tooltip-append-to-body="true"
+            >
+                    <i class="fa" ng-class="{'fa-times':$ctrl.someSelected(cat_key), 'fa-check':!$ctrl.someSelected(cat_key)}"></i>
+            </div>
+            <span class="truncate">{{cat.name}}</span>
+        </div>
+
+    </div>
+
+    <!-- Box sottocategorie -->
+    <div class="gal-subcategory-list flex" ng-show="$ctrl.selectedCategory">
+        <!--{{$ctrl.selectedCategory.name}}-->
+        <!--<div >-->
+            <div class="flex ">
+                <a href="" class="btn" style="color:white;"
+                   ng-click="$ctrl.selectedCategory=null;$ctrl.selectedCategory_key=null">
+                    <i class="fa fa-arrow-left fa-2x"></i>
+                </a>
+                {{$ctrl.data[$ctrl.selectedCategory_key].title}}
+                <category-view class="flex"
+                               categories="$ctrl.selectedCategory"
+                               on-select="$ctrl.selectSubCategory">
+                </category-view>
+            </div>
+        <!--</div>-->
+
+
+
+
+    </div>
+
+    <!-- Box punti di interesse -->
+    <div class="gal-poi-list flex" ng-show="$ctrl.entriesList.length>0">
+        <div class="gal_separator"></div>
+        <list-view
+                entries="$ctrl.entriesList"
+                on-select="$ctrl.selectEntry"
+                on-mouse-in="$ctrl.mouseInEntry"
+                on-mouse-out="$ctrl.mouseOutEntry"
+                selected-entry="$ctrl.selectedEntry"
+        ></list-view>
+    </div>
+
+</div>
+
+<div class="gal_map_box">
+    <map-view id="map"
+              ng-hide="$ctrl.galleryOpen"
+              entries="$ctrl.entriesList"
+              selected-entry="$ctrl.selectedEntry"
+              on-select-entry="$ctrl.selectEntry"
+    >
+    </map-view>
+</div>
+
+
+<div
+        ng-show="$ctrl.galleryOpen"
+        style="position:fixed; top:0px; bottom:0px; left:0px; right:0px; z-index: 10;background-color: rgba(0,0,0,0.8);">
+</div>
+
+
+<div class="fullscreen-overlay"
+     ng-class="{
+        'fullscreen-detail-box':($ctrl.fullscreenDetail||$ctrl.media=='mobile')&&$ctrl.selectedEntry
+     }"
+     ng-hide="$ctrl.hiddenDetail"
+     ng-click="$ctrl.closeDetail()">
+</div>
+<!--'hidden-detail-box': $ctrl.hiddenDetail && $ctrl.media=='desktop'-->
+<div
+        class="gal-detail-box animated fadeIn"
+        ng-class="{
+            'fullscreen-detail-box':$ctrl.fullscreenDetail||$ctrl.media=='mobile'
+
+        }"
+        ng-if="$ctrl.selectedEntry"
+        ng-hide="$ctrl.hiddenDetail "
+        ng-cloak>
+
+        <detail-view element="$ctrl.selectedEntry"
+                     gallery-open="$ctrl.galleryOpen"
+                     ng-click="$ctrl.hiddenDetail=false"
+        ></detail-view>
+
+        <a
+                ng-show="$ctrl.selectedEntry && !$ctrl.hiddenDetail && $ctrl.media=='desktop'"
+                class="fullscreen_btn_detail"
+                uib-tooltip="{{$ctrl.fullscreenDetail?'Contrai':'Espandi'}} Scheda"
+                tooltip-append-to-body="true"
+                ng-click="$ctrl.fullscreenDetail=!$ctrl.fullscreenDetail">
+            <i class="fa" ng-class="$ctrl.fullscreenDetail?'fa-compress':'fa-expand'" aria-hidden="true"></i>
+        </a>
+        <!-- && !$ctrl.fullscreenDetail && $ctrl.media=='desktop' -->
+        <a
+                ng-show="$ctrl.selectedEntry"
+                class="hide_btn_detail"
+                uib-tooltip="Nascondi Scheda"
+                tooltip-append-to-body="true"
+                ng-click="$ctrl.hiddenDetail = !$ctrl.hiddenDetail">
+            <i class="fa" ng-class="$ctrl.hiddenDetail?'fa-arrow-up':'fa-arrow-down'" aria-hidden="true"></i>
+        </a>
+        <a
+                ng-show="$ctrl.selectedEntry"
+                class="close_btn_detail"
+                uib-tooltip="Chiudi Scheda"
+                tooltip-append-to-body="true"
+                ng-click="$ctrl.closeDetail()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+
+</div>
+
+
+<!--ng-if="$ctrl.media=='mobile'">-->
+    <a class="gal_btn_green_menu list flex animated fadeIn " ng-show="$ctrl.hiddenDetail"
+style="position:absolute; bottom:2em; right:2em; z-index: 10000;"
+            ng-click="$ctrl.hiddenDetail=false">
+        <img
+             ng-src="{{$ctrl.selectedEntry.thumb | djangoMedia}}">
+        <span>Scheda: {{$ctrl.selectedEntry.name}}</span>
+    </a>
+
+<!--
+
+style="
+position:absolute;
+bottom:10px;
+right:10px;
+max-width: 400px;
+height:40px;
+z-index:10000;
+background-color: white;
+"-->

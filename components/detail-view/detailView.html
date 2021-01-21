@@ -1,0 +1,66 @@
+<div class="detail-view-flex" ng-show="$ctrl.element">
+    <!--
+    <div ng-style="{'background-image': 'url('+ $ctrl.element.cover +')'}" class="gal-image-poi">
+        <img class="cover-img" ng-src="img/null_image_poi.png">
+        <div class="gal-title">
+            <h2>{{$ctrl.element.name}}</h2>
+            <h3 ng-if="$ctrl.element.scientific_name">{{$ctrl.element.scientific_name}}</h3>
+            <h3 ng-if="$ctrl.element.family">Famiglia: {{$ctrl.element.family}}</h3>
+        </div>
+
+    </div>
+    -->
+
+    <div class="gal-image-poi"
+         style="text-align: center;width: 100%; background: white;"
+
+    >
+        <!--ng-style="{'background-color':'rgb('+$ctrl.cover_color[0]+', '+$ctrl.cover_color[1]+', '+$ctrl.cover_color[2]+')'}"-->
+        <img class="cover-img"  ng-src="{{$ctrl.element.cover_small | djangoMedia}}" color-thief color-thief-dominant="$ctrl.cover_color">
+        <div class="gal-title">
+            <h2>{{$ctrl.element.name}}</h2>
+            <h3 ng-if="$ctrl.element.scientific_name">{{$ctrl.element.scientific_name}}</h3>
+            <h3 ng-if="$ctrl.element.family">Famiglia: {{$ctrl.element.family}}</h3>
+        </div>
+    </div>
+
+    <div class="gal-detail-infos">
+        <ng-gallery images="$ctrl.gallery"
+                    thumbs-num="5"
+                    opened="$ctrl.galleryOpen"
+                    ng-if="$ctrl.gallery.length>0"
+        >
+
+        </ng-gallery>
+        <div class="gal-box-info-details" ng-repeat="info in $ctrl.element.info | orderBy: 'order'">
+
+            <strong>{{::info.name}}</strong>
+            <div ng-repeat="value in info.values | orderBy: 'order'">
+
+                <div ng-if="info.type==='html'">
+                    <div ng-bind-html="value.text | rawHtml" ></div>
+                </div>
+
+                <div ng-if="!info.type || info.type==='timetable' || info.type==='descr'">
+                    <span>{{value.text}}</span>
+                </div>
+                <a  ng-if="info.type &&
+                            info.type!=='timetable' && info.type!=='descr'  &&
+                            info.type!=='image' && info.type!=='html'"
+                    ng-if="info.type"
+                    ng-href="{{$ctrl.getURL(value.text, info.type)}}"
+                    target="_blank" >
+                    {{value.text}}
+                </a>
+                <img ng-if="info.type && info.type==='image'" ng-src="{{value.text}}"/>
+
+            </div>
+        </div>
+        <div ng-if="$ctrl.element.description">
+            <strong>Descrizione</strong>
+            </br>
+            <span>{{$ctrl.element.description}}</span>
+        </div>
+    </div>
+</div>
+

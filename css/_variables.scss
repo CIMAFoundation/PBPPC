@@ -1,0 +1,109 @@
+$height_header:4em;
+$height_footer:0;
+$gap: 1em;
+
+
+//palette contrasti
+$color_01:#003a70;
+$color_02:#61FBFF;
+$color_pick:#122238;
+$color_03:#29A900;
+$color_04:#F93900;
+$color_05:#B80000;
+
+//palette rosa/blu/grey
+/*
+$color_01:#123c69;
+$color_02:#edc7b7;
+$color_pick:#eee2dc;
+$color_03:#bab2b5;
+$color_04:#F93900;
+$color_05:#ac3b61;
+*/
+
+$color_txt: #444;
+$color_inv: #eee;
+
+$trans: rgba(0,0,0,0);
+$trans_grad: linear-gradient(to right, $trans, $color_02, $trans);
+$trans_white: linear-gradient(to right, $trans, $color_inv, $trans);
+
+
+//$color_bck: rgba($color_02, 0.1);
+$color_bck: $color_pick;
+
+
+$breakpoint_xlg: 1280px;
+$breakpoint_lg: 1024px;
+$breakpoint_md: 768px;
+$breakpoint_xs: 500px;
+
+
+@mixin multiple-transition($properties: all, $duration: 200ms, $method: ease, $delay: 0ms) {
+  $prefixes: -webkit- -moz- -ms- -o-;
+  @each $prefix in $prefixes {
+    $value: ();
+    @each $property in $properties {
+      @if length($value) > 0 {
+        $value: append($value, unquote(",") #{$property} $duration $method $delay);
+      }
+      @else {
+        $value: append($value, #{$property} $duration $method $delay);
+      }
+    }
+    #{$prefix}transition: $value;
+  }
+}
+
+@mixin line-clamp($lines) {
+  .line-clamp--#{$lines} {
+    -webkit-line-clamp: $lines;
+    height: 1rem * 1.5 * $lines;
+    &:after {
+    top: 1rem * 1.5 * ($lines - 1);
+  }
+  }
+}
+
+@mixin text-truncate($trunk_width) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: $trunk_width;
+
+}
+
+@mixin shadow($value) {
+  box-shadow: 0 0 $value rgba($color_txt,0.3);
+
+}
+
+$img_size:100px;
+
+@mixin hr_element {
+  border-top:1px solid rgba($color_02,0.3);
+  margin-top: 1em;
+  padding-top:1em;
+}
+@mixin hr_box {
+  border: 1px double rgba($color_02,0.3);
+  //margin: 0;
+
+}
+
+@mixin hr {
+    border: 0;
+    height: 1px;
+    background: $trans;
+    background-image: $trans_grad;
+
+
+}
+
+
+
+@mixin hr_inv {
+  @include hr;
+  background: $trans_white;
+
+}

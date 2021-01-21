@@ -1,0 +1,371 @@
+{
+    "accoglienza_agriturismi": {
+        "icon": "agriturismi",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "red",
+        "extraClasses": "fa",
+        "label": "Agriturismi"
+    },
+	"accoglienza_alberghi": {
+        "icon": "alberghi",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "green",
+        "extraClasses": "fa",
+        "label": "Alberghi"
+    }, 
+	"accoglienza_altro": {
+        "icon": "altro2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "lightyellow",
+        "extraClasses": "fa",
+        "label": "Altro"
+    },
+	"accoglienza_b_&_b": {
+        "icon": "bnb2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "B&B"
+    },
+	"accoglienza_campeggi": {
+        "icon": "campeggi2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Campeggi"
+    },
+	"accoglienza_ristoranti": {
+        "icon": "ristoranti",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Ristoranti"
+    },
+	"altre_voci_arti_e_mestieri": {
+        "icon": "altrevoce_artimestieri",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Arti e Mestieri"
+    },
+	"altre_voci_tradizioni_rurali": {
+        "icon": "altrevoce_tradrurali",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Tradizioni Rurali"
+    },
+	"aziende_agricole_olivicole": {
+        "icon": "aziendeagricole_olivicole",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Aziende Olivicole"
+    },
+	"aziende_agricole_ortofrutticole": {
+        "icon": "aziendeagricole_orto",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Aziende OrtoFrutticole"
+    },
+	"aziende_agricole_zootecniche": {
+        "icon": "aziendeagricole_zootecniche",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Aziende OrtoFrutticole"
+    },
+	"aziende_agricole_altro": {
+        "icon": "aziendeagricoleP",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Altre Aziende Agricole"
+    },
+	"fauna_avifauna": {
+        "icon": "fauna_avifauna",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Avifauna"
+    },
+	"fauna_faunaminore": {
+        "icon": "faunaminore2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Fauna Minore"
+    },
+	"fauna_rettili": {
+        "icon": "rettili",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Rettili"
+    },
+	"flora_alberi_centenari": {
+        "icon": "albericentenari",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "yellow",
+        "extraClasses": "fa",
+        "label": "Alberi Centenari"
+    },
+	"flora_alberi_monumentali": {
+        "icon": "alberimonumentali2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Alberi Monumentali"
+    },
+	"flora_endemismi_vegetali": {
+        "icon": "endemismivegetali2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Endemismi Vegetali"
+    },
+	"flora_formazioni_arboree": {
+        "icon": "formazioniarboree2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Formazioni Arboree"
+    },
+	"flora_funghi_e_tartufi": {
+        "icon": "funghitartufi2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Funghi e Tartufi"
+    },
+	"manifestazioni_manifestazioni_culturali": {
+        "icon": "manifestazioniculturali2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Manifestazioni Culturali"
+    },
+	"manifestazioni_manifestazioni_enogastronomiche": {
+        "icon": "enogastronomia2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Tradizioni Enogastronomiche"
+    },
+	"manifestazioni_manifestazioni_musicali": {
+        "icon": "tradizionimusicali",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Manifestazioni Musicali"
+    },
+	"manifestazioni_manifestazioni_sportive": {
+        "icon": "tradizionisportive",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Manifestazioni Sportive"
+    },
+	"manifestazioni_sport_dimenticati": {
+        "icon": "sportdimenticati2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Sport Dimenticati"
+    },
+	"manifestazioni_manifestazioni_religiose_tradizionali_popolari": {
+        "icon": "tradizionireligiose2",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Manifestazioni Religiose Tradizionali"
+    },
+	"prodotti_tipici_antiche_cultivar_fruttifere": {
+        "icon": "prodtipici_antichecultivar",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Anche Cultivar Fruttifere"
+    },
+	"prodotti_tipici_prodotti_enogastronomici": {
+        "icon": "prodottitipici_enogastronomici",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Prodotti Enogastronomici"
+    },
+	"sport_outdoor_bike": {
+        "icon": "sport_bike",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Bike"
+    },
+	"sport_outdoor_canotaggio": {
+        "icon": "sport_canoing",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Canotaggio"
+    },
+		"sport_outdoor_climbing": {
+        "icon": "sport_climbing",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Climbing"
+    },
+		"sport_outdoor_pesca": {
+        "icon": "sport_pesca",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Pesca"
+    },
+		"sport_outdoor_speleologia": {
+        "icon": "geologia_grotta",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Speleologia"
+    },
+	"sport_outdoor_trekking": {
+        "icon": "sport_trekking",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Trekking"
+    },
+	"sport_outdoor_trekking_a_cavallo": {
+        "icon": "sport_horsetrek",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Trekking a cavallo"
+    },
+	"storia_arte_e_cultura_bardineto": {
+        "icon": "bardineto",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Bardineto"
+    },
+	"storia_arte_e_cultura_boissano": {
+        "icon": "boissano",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Boissano"
+    },
+	"storia_arte_e_cultura_calice_ligure": {
+        "icon": "calice_ligure",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Calice Ligure"
+    },
+	"storia_arte_e_cultura_calizzano": {
+        "icon": "calizzano",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Calizzano"
+    },
+	"storia_arte_e_cultura_finale_ligure": {
+        "icon": "finale_ligure",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Finale Ligure"
+    },
+	"storia_arte_e_cultura_giustenice": {
+        "icon": "giustenice",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Giustenice"
+    },
+	"storia_arte_e_cultura_orco_feglino": {
+        "icon": "orco_feglino",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Orco Feglino"
+    },
+	"storia_arte_e_cultura_osiglia": {
+        "icon": "osiglia",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Osiglia"
+    },
+	"storia_arte_e_cultura_rialto": {
+        "icon": "rialto",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Rialto"
+    },
+	"storia_arte_e_cultura_toirano": {
+        "icon": "toirano",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "brown",
+        "extraClasses": "fa",
+        "label": "Toirano"
+    },
+	"storia_arte_e_cultura_vezzi_portio": {
+        "icon": "vezzi_portio",
+        "prefix": "gal-icons",
+        "iconColor": "white",
+        "markerColor": "darkbrown",
+        "extraClasses": "fa",
+        "label": "Vezzi Portio"
+    }
+	
+}

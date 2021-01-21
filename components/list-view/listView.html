@@ -1,0 +1,28 @@
+<div class="search-bar">
+    <form>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                <input type="text" class="form-control" placeholder="Cerca..." ng-model="searchFilter">
+                <a class="glyphicon glyphicon-remove-sign form-control-feedback form-control-clear"
+                   ng-show="searchFilter!=''"
+                   ng-click="searchFilter=''"
+                   style="pointer-events: auto; text-decoration: none;cursor: pointer;"></a>
+
+            </div>
+        </div>
+    </form>
+</div>
+<div class="list">
+    <!--<ul>-->
+        <div class="flex"
+            ng-repeat="entry in $ctrl.entries | filter:searchFilter | orderBy: '-added_date'"
+            ng-click="$ctrl.selectEntry(entry)"
+            ng-mouseenter="$ctrl.mouseInEntry(entry)"
+            ng-mouseleave="$ctrl.mouseOutEntry(entry)"
+            >
+            <img class="circle-thumb" ng-src="{{entry.thumb | djangoMedia}}">
+            <span>{{::entry.name}}</span>
+        </div>
+    <!--</ul>-->
+</div>

@@ -1,0 +1,18 @@
+<div class="flex col" ng-repeat="(key, subcategory) in $ctrl.categories">
+    <!--ng-style="{'-webkit-animation-delay': $index*50 + 'ms', 'animation-delay': $index*50 + 'ms'}"-->
+        <img
+                ng-src="{{subcategory.thumb | djangoMedia}}"
+                class="subcategory-icon animated fadeIn"
+
+                uib-tooltip="{{::subcategory.name||key}}"
+                tooltip-placement="bottom"
+                ng-class="{'gal-icon-sub-active': subcategory.selected}"
+                ng-click="$ctrl.selectCategory(key)" />
+
+        <span >{{subcategory.name||key}}</span>
+        <!--
+        <div>{{::subcategory.name||key}}</div>
+        -->
+
+</div>
+

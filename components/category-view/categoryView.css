@@ -1,0 +1,27 @@
+/* Foglio di stile vista SubCategory Icon */
+
+.subcategory-icon {
+    /* max-width:50px; */
+    margin:5px;
+    /*
+    border-radius: 50%;
+    */
+}
+.subcategory-icon:hover {
+    transform: scale(1.1);
+}
+
+.gal-icon-sub-active{
+    /* border:solid 2px white; */
+    /*border-radius: 5px;*/
+    /*border-radius: 50%;*/
+}
+
+category-view li.ng-enter {
+    transition-delay: 0.3s;
+    animation: fadeInLeft 0.3s;
+}
+
+category-view li.ng-leave {
+    animation: fadeOutLeft 0.3s;
+}

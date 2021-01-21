@@ -1,0 +1,180 @@
+{
+  "tipo tratta": {
+    "1": "carrozzabile",
+    "2": "mulattiera",
+    "3": "sentiero",
+    "4": "traccia tratturo",
+    "5": "viabilità forestale",
+    "99": "altro"
+  },
+  "tipo fondo": {
+    "1": "naturale",
+    "2": "asfaltato",
+    "3": "selciato/lastricato",
+    "4": "sentiero attrezzato",
+    "99": "altro"
+  },
+  "morfologia": {
+    "1": "fondovalle",
+    "2": "versante",
+    "3": "mezzacosta",
+    "4": "crinale",
+    "5": "misto"
+  },
+  "ambiente": {
+    "1": "incolto",
+    "2": "coltivo/campagna",
+    "3": "prati",
+    "4": "pascoli d'alta quota",
+    "5": "cespuglieto",
+    "6": "macchia mediterranea",
+    "7": "boschi latifoglie",
+    "8": "boschi di conifere",
+    "9": "boschi misti",
+    "10": "ghiaione",
+    "11": "pietrame",
+    "12": "reccette",
+    "13": "greto corso d'acqua",
+    "14": "calanco",
+    "15": "nevaio",
+    "16": "ghiacciaio",
+    "17": "centro abitato",
+    "18": "misto",
+    "99": "altro"
+  },
+  "percorribilità": {
+    "1": "non percorribile",
+    "2": "degradata",
+    "3": "percorribile"
+  },
+  "stato percorribilità": {
+    "1": "eroso",
+    "2": "boscato/infrascato",
+    "3": "interruzione in più punti"
+  },
+  "utenza": {
+    "1": "pedonale",
+    "2": "fruibile con MTB",
+    "3": "fruibile con cavallo",
+    "4": "fruibile per diversamente abili",
+    "5": "ciclabile",
+    "6": "pedonale, MTB e cavalli"
+  },
+  "degrado TRATTA": {
+    "1": "aratura",
+    "2": "frane/smottamenti",
+    "3": "erosioni",
+    "4": "pendeza eccessiva",
+    "5": "scorciatoia",
+    "6": "solcato fangoso",
+    "7": "allagamento/ruscellamenti",
+    "8": "boscato",
+    "9": "alberi crollati",
+    "10": "infrascato per erba e felci",
+    "11": "infrascato per specie spinose/arbustive",
+    "12": "manto stradale danneggiato",
+    "13": "pietroso",
+    "99": "altro"
+  },
+  "stato segnaletica a vernice": {},
+  "segnale GSM": {
+    "0": "Assenza segnale GSM",
+    "1": "Presenza segnale GSM"
+  },
+  "punti di interesse": {
+    "1": "punto panoramico",
+    "2": "albero monumentale",
+    "3": "evidenza geologica",
+    "4": "stazione floristica",
+    "5": "orto botanico",
+    "6": "museo/ecomuseo",
+    "7": "castello/fortilizio",
+    "8": "cappella/pilone votivo/chiesa/oratorio",
+    "9": "punti avvistamento faunistico",
+    "10": "segni uomo preistorico/interesse archeologico/industriale/contadino/..",
+    "11": "emergenze artistiche isolate/elem di valore storico artistico",
+    "12": "colle o valico",
+    "13": "bivio con sentiero  o strada minore",
+    "14": "centro visite parchi",
+    "15": "ponte/passerella",
+    "16": "guado",
+    "17": "fermata messi pubblici",
+    "99": "altro"
+  },
+  "strutture ricettive": {
+    "1": "rifugio con bivacco d'emergenza",
+    "2": "rifugio senza bivacco d'emergenza",
+    "3": "bivacco",
+    "4": "ostello",
+    "5": "posti tappa",
+    "6": "agriturismo",
+    "7": "campeggio",
+    "8": "bar",
+    "9": "ristoro",
+    "10": "hotel",
+    "11": "foresteria parco",
+    "12": "castello forestale",
+    "13": "area di sosta attrezzata",
+    "99": "altro"
+  },
+  "aree attrezzate": {
+    "1": "parcheggio/pto di attestamento veicoli",
+    "2": "area pic nic",
+    "3": "palestra di roccia",
+    "4": "ferrata",
+    "99": "altro"
+  },
+  "insediamenti": {
+    "1": "paese",
+    "2": "borgo/villaggio",
+    "3": "alpeggio",
+    "4": "casa isolata/baita",
+    "99": "altro"
+  },
+  "punti acqua": {
+    "1": "fontana",
+    "2": "sorgente",
+    "3": "altro"
+  },
+  "tipo segnaletica": {
+    "1": "bacheca (2 pali)",
+    "2": "palo con pannello (1 palo)",
+    "3": "tabelle località (freccia senza verso)",
+    "4": "picchetto con sengavia colorati",
+    "5": "freccia",
+    "6": "picchetto con placchetta",
+    "7": "ometto",
+    "8": "segnavia a vernice",
+    "99": "altro"
+  },
+  "stato  segnaletica": {
+    "1": "buono",
+    "2": "insufficiente/da ripristinare",
+    "3": "assente"
+  },
+  "degrado PUNTO": {
+    "1": "aratura",
+    "2": "frane/smottamenti",
+    "3": "erosioni",
+    "4": "pendeza eccessiva",
+    "5": "scorciatoia",
+    "6": "solcato fangoso",
+    "7": "allagamento/ruscellamenti",
+    "8": "boscato",
+    "9": "alberi crollati",
+    "10": "infrascato per erba e felci",
+    "11": "infrascato per specie spinose/arbustive",
+    "12": "manto stradale danneggiato",
+    "13": "pietroso",
+    "99": "altro"
+  },
+  "punti soccorso": {
+    "1": "punto di soccorso",
+    "2": "stazione di soccorso alpino",
+    "3": "CFS",
+    "4": "forze dell'ordine",
+    "5": "punti di chiamata del soccorso alpino",
+    "6": "piazzola di atterraggio elicotteri di soccorso",
+    "99": "altro"
+  }
+}

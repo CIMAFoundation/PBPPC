@@ -1,0 +1,40 @@
+/*
+$color_01:#123c69;
+$color_02:#edc7b7;
+$color_pick:#eee2dc;
+$color_03:#bab2b5;
+$color_04:#F93900;
+$color_05:#ac3b61;
+*/
+.gal-detail-box {
+  grid-area: content; }
+  .gal-detail-box strong, .gal-detail-box b {
+    color: #61FBFF; }
+
+.gal-detail-box {
+  position: absolute;
+  bottom: 2em;
+  right: 2em;
+  height: 65vh;
+  width: 40vw;
+  overflow: auto;
+  box-shadow: 0 0 5px rgba(68, 68, 68, 0.3);
+  background-color: #eee; }
+
+.gal-detail-infos {
+  background-color: #122238; }
+
+[class*="_btn_detail"] {
+  text-shadow: 0 0 3px rgba(68, 68, 68, 0.3);
+  top: 10px;
+  color: #444;
+  background: #61FBFF;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-size: 2em;
+  line-height: 1; }
+
+.gal-title {
+  text-shadow: 0 0 3px rgba(68, 68, 68, 0.25), 0 0 3px rgba(68, 68, 68, 0.25), 0 0 3px rgba(68, 68, 68, 0.25), 0 0 3px rgba(68, 68, 68, 0.25); }
+
+/*# sourceMappingURL=detailView.css.map */

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>portale GAL</title>
+
+    <!-- Bootstrap
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- Leaflet -->
+    <link href="bower_components/leaflet/dist/leaflet.css" rel="stylesheet" />
+    <!-- Leaflet -->
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <!-- angular -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-leaflet-directive/dist/angular-leaflet-directive.js"></script>
+    <script src="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.js"></script>
+    <link href="bower_components/Leaflet.awesome-markers/dist/leaflet.awesome-markers.css" rel="stylesheet"/>
+
+    <!-- ng gallery -->
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="js/ngGallery/src/css/ngGallery.css">
+    <script type="text/javascript" src="js/ngGallery/src/js/ngGallery.js"></script>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script src="http://pc035860.github.io/angular-highlightjs/angular-highlightjs.min.js"></script>
+
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/v1.1.1/src-min-noconflict/ace.js"></script>
+    <script src="https://rawgithub.com/angular-ui/ui-ace/bower/ui-ace.min.js"></script>
+
+    <script type="text/javascript">
+        var jsonlint=function(){var a=!0,b=!1,c={},d=function(){var a={trace:function(){},yy:{},symbols_:{error:2,JSONString:3,STRING:4,JSONNumber:5,NUMBER:6,JSONNullLiteral:7,NULL:8,JSONBooleanLiteral:9,TRUE:10,FALSE:11,JSONText:12,JSONValue:13,EOF:14,JSONObject:15,JSONArray:16,"{":17,"}":18,JSONMemberList:19,JSONMember:20,":":21,",":22,"[":23,"]":24,JSONElementList:25,$accept:0,$end:1},terminals_:{2:"error",4:"STRING",6:"NUMBER",8:"NULL",10:"TRUE",11:"FALSE",14:"EOF",17:"{",18:"}",21:":",22:",",23:"[",24:"]"},productions_:[0,[3,1],[5,1],[7,1],[9,1],[9,1],[12,2],[13,1],[13,1],[13,1],[13,1],[13,1],[13,1],[15,2],[15,3],[20,3],[19,1],[19,3],[16,2],[16,3],[25,1],[25,3]],performAction:function(b,c,d,e,f,g,h){var i=g.length-1;switch(f){case 1:this.$=b.replace(/\\(\\|")/g,"$1").replace(/\\n/g,"\n").replace(/\\r/g,"\r").replace(/\\t/g,"	").replace(/\\v/g,"").replace(/\\f/g,"\f").replace(/\\b/g,"\b");break;case 2:this.$=Number(b);break;case 3:this.$=null;break;case 4:this.$=!0;break;case 5:this.$=!1;break;case 6:return this.$=g[i-1];case 13:this.$={};break;case 14:this.$=g[i-1];break;case 15:this.$=[g[i-2],g[i]];break;case 16:this.$={},this.$[g[i][0]]=g[i][1];break;case 17:this.$=g[i-2],g[i-2][g[i][0]]=g[i][1];break;case 18:this.$=[];break;case 19:this.$=g[i-1];break;case 20:this.$=[g[i]];break;case 21:this.$=g[i-2],g[i-2].push(g[i])}},table:[{3:5,4:[1,12],5:6,6:[1,13],7:3,8:[1,9],9:4,10:[1,10],11:[1,11],12:1,13:2,15:7,16:8,17:[1,14],23:[1,15]},{1:[3]},{14:[1,16]},{14:[2,7],18:[2,7],22:[2,7],24:[2,7]},{14:[2,8],18:[2,8],22:[2,8],24:[2,8]},{14:[2,9],18:[2,9],22:[2,9],24:[2,9]},{14:[2,10],18:[2,10],22:[2,10],24:[2,10]},{14:[2,11],18:[2,11],22:[2,11],24:[2,11]},{14:[2,12],18:[2,12],22:[2,12],24:[2,12]},{14:[2,3],18:[2,3],22:[2,3],24:[2,3]},{14:[2,4],18:[2,4],22:[2,4],24:[2,4]},{14:[2,5],18:[2,5],22:[2,5],24:[2,5]},{14:[2,1],18:[2,1],21:[2,1],22:[2,1],24:[2,1]},{14:[2,2],18:[2,2],22:[2,2],24:[2,2]},{3:20,4:[1,12],18:[1,17],19:18,20:19},{3:5,4:[1,12],5:6,6:[1,13],7:3,8:[1,9],9:4,10:[1,10],11:[1,11],13:23,15:7,16:8,17:[1,14],23:[1,15],24:[1,21],25:22},{1:[2,6]},{14:[2,13],18:[2,13],22:[2,13],24:[2,13]},{18:[1,24],22:[1,25]},{18:[2,16],22:[2,16]},{21:[1,26]},{14:[2,18],18:[2,18],22:[2,18],24:[2,18]},{22:[1,28],24:[1,27]},{22:[2,20],24:[2,20]},{14:[2,14],18:[2,14],22:[2,14],24:[2,14]},{3:20,4:[1,12],20:29},{3:5,4:[1,12],5:6,6:[1,13],7:3,8:[1,9],9:4,10:[1,10],11:[1,11],13:30,15:7,16:8,17:[1,14],23:[1,15]},{14:[2,19],18:[2,19],22:[2,19],24:[2,19]},{3:5,4:[1,12],5:6,6:[1,13],7:3,8:[1,9],9:4,10:[1,10],11:[1,11],13:31,15:7,16:8,17:[1,14],23:[1,15]},{18:[2,17],22:[2,17]},{18:[2,15],22:[2,15]},{22:[2,21],24:[2,21]}],defaultActions:{16:[2,6]},parseError:function(b,c){throw new Error(b)},parse:function(b){function o(a){d.length=d.length-2*a,e.length=e.length-a,f.length=f.length-a}function p(){var a;return a=c.lexer.lex()||1,typeof a!="number"&&(a=c.symbols_[a]||a),a}var c=this,d=[0],e=[null],f=[],g=this.table,h="",i=0,j=0,k=0,l=2,m=1;this.lexer.setInput(b),this.lexer.yy=this.yy,this.yy.lexer=this.lexer,typeof this.lexer.yylloc=="undefined"&&(this.lexer.yylloc={});var n=this.lexer.yylloc;f.push(n),typeof this.yy.parseError=="function"&&(this.parseError=this.yy.parseError);var q,r,s,t,u,v,w={},x,y,z,A;for(;;){s=d[d.length-1],this.defaultActions[s]?t=this.defaultActions[s]:(q==null&&(q=p()),t=g[s]&&g[s][q]);if(typeof t=="undefined"||!t.length||!t[0]){if(!k){A=[];for(x in g[s])this.terminals_[x]&&x>2&&A.push("'"+this.terminals_[x]+"'");var B="";this.lexer.showPosition?B="Parse error on line "+(i+1)+":\n"+this.lexer.showPosition()+"\nExpecting "+A.join(", ")+", got '"+this.terminals_[q]+"'":B="Parse error on line "+(i+1)+": Unexpected "+(q==1?"end of input":"'"+(this.terminals_[q]||q)+"'"),this.parseError(B,{text:this.lexer.match,token:this.terminals_[q]||q,line:this.lexer.yylineno,loc:n,expected:A})}if(k==3){if(q==m)throw new Error(B||"Parsing halted.");j=this.lexer.yyleng,h=this.lexer.yytext,i=this.lexer.yylineno,n=this.lexer.yylloc,q=p()}for(;;){if(l.toString()in g[s])break;if(s==0)throw new Error(B||"Parsing halted.");o(1),s=d[d.length-1]}r=q,q=l,s=d[d.length-1],t=g[s]&&g[s][l],k=3}if(t[0]instanceof Array&&t.length>1)throw new Error("Parse Error: multiple actions possible at state: "+s+", token: "+q);switch(t[0]){case 1:d.push(q),e.push(this.lexer.yytext),f.push(this.lexer.yylloc),d.push(t[1]),q=null,r?(q=r,r=null):(j=this.lexer.yyleng,h=this.lexer.yytext,i=this.lexer.yylineno,n=this.lexer.yylloc,k>0&&k--);break;case 2:y=this.productions_[t[1]][1],w.$=e[e.length-y],w._$={first_line:f[f.length-(y||1)].first_line,last_line:f[f.length-1].last_line,first_column:f[f.length-(y||1)].first_column,last_column:f[f.length-1].last_column},v=this.performAction.call(w,h,j,i,this.yy,t[1],e,f);if(typeof v!="undefined")return v;y&&(d=d.slice(0,-1*y*2),e=e.slice(0,-1*y),f=f.slice(0,-1*y)),d.push(this.productions_[t[1]][0]),e.push(w.$),f.push(w._$),z=g[d[d.length-2]][d[d.length-1]],d.push(z);break;case 3:return!0}}return!0}},b=function(){var a={EOF:1,parseError:function(b,c){if(!this.yy.parseError)throw new Error(b);this.yy.parseError(b,c)},setInput:function(a){return this._input=a,this._more=this._less=this.done=!1,this.yylineno=this.yyleng=0,this.yytext=this.matched=this.match="",this.conditionStack=["INITIAL"],this.yylloc={first_line:1,first_column:0,last_line:1,last_column:0},this},input:function(){var a=this._input[0];this.yytext+=a,this.yyleng++,this.match+=a,this.matched+=a;var b=a.match(/\n/);return b&&this.yylineno++,this._input=this._input.slice(1),a},unput:function(a){return this._input=a+this._input,this},more:function(){return this._more=!0,this},less:function(a){this._input=this.match.slice(a)+this._input},pastInput:function(){var a=this.matched.substr(0,this.matched.length-this.match.length);return(a.length>20?"...":"")+a.substr(-20).replace(/\n/g,"")},upcomingInput:function(){var a=this.match;return a.length<20&&(a+=this._input.substr(0,20-a.length)),(a.substr(0,20)+(a.length>20?"...":"")).replace(/\n/g,"")},showPosition:function(){var a=this.pastInput(),b=(new Array(a.length+1)).join("-");return a+this.upcomingInput()+"\n"+b+"^"},next:function(){if(this.done)return this.EOF;this._input||(this.done=!0);var a,b,c,d,e,f;this._more||(this.yytext="",this.match="");var g=this._currentRules();for(var h=0;h<g.length;h++){c=this._input.match(this.rules[g[h]]);if(c&&(!b||c[0].length>b[0].length)){b=c,d=h;if(!this.options.flex)break}}if(b){f=b[0].match(/\n.*/g),f&&(this.yylineno+=f.length),this.yylloc={first_line:this.yylloc.last_line,last_line:this.yylineno+1,first_column:this.yylloc.last_column,last_column:f?f[f.length-1].length-1:this.yylloc.last_column+b[0].length},this.yytext+=b[0],this.match+=b[0],this.yyleng=this.yytext.length,this._more=!1,this._input=this._input.slice(b[0].length),this.matched+=b[0],a=this.performAction.call(this,this.yy,this,g[d],this.conditionStack[this.conditionStack.length-1]),this.done&&this._input&&(this.done=!1);if(a)return a;return}if(this._input==="")return this.EOF;this.parseError("Lexical error on line "+(this.yylineno+1)+". Unrecognized text.\n"+this.showPosition(),{text:"",token:null,line:this.yylineno})},lex:function(){var b=this.next();return typeof b!="undefined"?b:this.lex()},begin:function(b){this.conditionStack.push(b)},popState:function(){return this.conditionStack.pop()},_currentRules:function(){return this.conditions[this.conditionStack[this.conditionStack.length-1]].rules},topState:function(){return this.conditionStack[this.conditionStack.length-2]},pushState:function(b){this.begin(b)}};return a.options={},a.performAction=function(b,c,d,e){var f=e;switch(d){case 0:break;case 1:return 6;case 2:return c.yytext=c.yytext.substr(1,c.yyleng-2),4;case 3:return 17;case 4:return 18;case 5:return 23;case 6:return 24;case 7:return 22;case 8:return 21;case 9:return 10;case 10:return 11;case 11:return 8;case 12:return 14;case 13:return"INVALID"}},a.rules=[/^(?:\s+)/,/^(?:(-?([0-9]|[1-9][0-9]+))(\.[0-9]+)?([eE][-+]?[0-9]+)?\b)/,/^(?:"(?:\\[\\"bfnrt/]|\\u[a-fA-F0-9]{4}|[^\\\0-\x09\x0a-\x1f"])*")/,/^(?:\{)/,/^(?:\})/,/^(?:\[)/,/^(?:\])/,/^(?:,)/,/^(?::)/,/^(?:true\b)/,/^(?:false\b)/,/^(?:null\b)/,/^(?:$)/,/^(?:.)/],a.conditions={INITIAL:{rules:[0,1,2,3,4,5,6,7,8,9,10,11,12,13],inclusive:!0}},a}();return a.lexer=b,a}();return typeof a!="undefined"&&typeof c!="undefined"&&(c.parser=d,c.parse=function(){return d.parse.apply(d,arguments)},c.main=function(d){if(!d[1])throw new Error("Usage: "+d[0]+" FILE");if(typeof process!="undefined")var e=a("fs").readFileSync(a("path").join(process.cwd(),d[1]),"utf8");else var f=a("file").path(a("file").cwd()),e=f.join(d[1]).read({charset:"utf-8"});return c.parser.parse(e)},typeof b!="undefined"&&a.main===b&&c.main(typeof process!="undefined"?process.argv.slice(1):a("system").args)),c}();
+    </script>
+
+    <script>
+
+        var f;
+
+        angular.module('reusableThings', []).directive('fileDropzone', function() {
+            return {
+                restrict: 'A',
+                scope: {
+                    file: '=',
+                    fileName: '=',
+                    images: '='
+                },
+                link: function(scope, element, attrs) {
+                    var checkSize, isTypeValid, processDragOverOrEnter, validMimeTypes;
+                    processDragOverOrEnter = function(event) {
+                        if (event != null) {
+                            event.preventDefault();
+                        }
+                        //event.dataTransfer.effectAllowed = 'copy';
+                        return false;
+                    };
+                    validMimeTypes = attrs.fileDropzone;
+                    checkSize = function(size) {
+                        var _ref;
+                        if (((_ref = attrs.maxFileSize) === (void 0) || _ref === '') || (size / 1024) / 1024 < attrs.maxFileSize) {
+                            return true;
+                        } else {
+                            alert("File must be smaller than " + attrs.maxFileSize + " MB");
+                            return false;
+                        }
+                    };
+                    isTypeValid = function(type) {
+                        if ((validMimeTypes === (void 0) || validMimeTypes === '') || validMimeTypes.indexOf(type) > -1) {
+                            return true;
+                        } else {
+                            alert("Invalid file type.  File must be one of following types " + validMimeTypes);
+                            return false;
+                        }
+                    };
+                    element.bind('dragover', processDragOverOrEnter);
+                    element.bind('dragenter', processDragOverOrEnter);
+
+                    element.bind('drop', onDrop);
+                    element.bind('ondrop', onDrop);
+
+                    function onDrop(event) {
+                        event.stopPropagation();
+                        event.preventDefault();
+
+                        var files = event.dataTransfer.files; // FileList object.
+                        for (var i = 0; f = files[i]; i++) {
+                            if(f.name.endsWith('.json')){
+                                var reader = new FileReader();
+                                reader.onload = function(evt) {
+                                    return scope.$apply(function() {
+                                        scope.file = evt.target.result;
+                                    });
+                                };
+                                scope.fileName = f.name;
+                                reader.readAsText(f);
+                            }else{
+                                var reader = new FileReader();
+
+                                reader.onload = (function(theFile) {
+                                    return function(e) {
+                                        var img = e.target.result;
+                                        scope.$apply(function () {
+                                            scope.images[theFile.name] = img;
+                                        });
+                                    };
+                                })(f);
+                                reader.readAsDataURL(f);
+                            }
+                        }
+                        return false;
+                    }
+
+                    return element;
+                }
+            };
+        });
+
+
+
+        var services = angular.module('galApp.services', []);
+        var galApp = angular.module('galApp', [
+            'jkuri.gallery',
+            'hljs',
+            'ui.ace',
+            'reusableThings'
+        ]);
+
+
+        galApp.filter('toArray', function () {
+            return function (input) {
+                return angular.isArray(input) ? input : [input];
+            };
+        });
+
+        galApp.filter('trust', ['$sce', function ($sce) {
+            return function (text, type) {
+                // Defaults to treating trusted text as `html`
+                return $sce.trustAs(type || 'html', text);
+            };
+        }
+        ]);
+
+        galApp.filter("nl2br", function ($filter) {
+            return function (data) {
+                if (!data) return data;
+                return data.replace(/\n\r?/g, '<br />');
+            };
+        });
+
+
+        galApp.filter('trustHtml', function($sce) {
+            return function(input) {
+                var output = $sce.trustAsHtml(input);
+                return output;
+            };
+        });
+
+        galApp.controller('MainController', function($scope){
+            $scope.element_str = ' \
+{ \n\
+    "id": "id", \n\
+        "name": "Nome Scheda", \n\
+        "infos": [ \n\
+                {\n\
+                    "descr":"Descrizione",\n\
+                            "value":"Lorem ipsum dolor sit amet, \\nconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc",\n\
+                            "type":"description"\n\
+                },\n\
+            { \n\
+                "descr": "Telefono", \n\
+                "value": [ \n\
+                    "333 3333333" \n\
+                ], \n\
+                "type": "phone" \n\
+            }, \n\
+            { \n\
+                "descr": "E-Mail", \n\
+                "value": [ \n\
+                    "info@cimafoundation.org", \n\
+                    "info2@cimafoundation.org" \n\
+                ], \n\
+                "type": "e-mail" \n\
+            }, \n\
+            { \n\
+                "descr": "Sito Web", \n\
+                "value": [ \n\
+                    "www.cimafoundation.org" \n\
+                ], \n\
+                "type": "website" \n\
+            }, \n\
+            { \n\
+                "descr": "Apertura", \n\
+                "value": [ \n\
+                    "solo su prenotazione sabato, domenica e festivi" \n\
+                ] \n\
+            }, \n\
+            { \n\
+                "descr": "Indirizzo", \n\
+                "value": [ \n\
+                    "Via Mazzini 50, 18025 Mendatica (IM)" \n\
+                ], \n\
+                "type": "address" \n\
+            } \n\
+        ], \n\
+        "images": [ \n\
+          { \n\
+             "img":"__test.jpg", \n\
+             "sub":"immaginde di esempio 1" \n\
+          },\n\
+          { \n\
+             "img":"__test.jpg", \n\
+             "sub":"immaginde di esempio 2" \n\
+          }\n\
+        ], \n\
+        "cover": "__cover.jpg" \n\
+} ';
+
+
+            $scope.images = {
+                "__cover.jpg":"cover.jpg",
+                "__test.jpg":"test.jpg"
+            };
+
+            $scope.element = null;
+            $scope.parse = function(){
+                try{
+                    var element = JSON.parse($scope.element_str);
+                }catch(exp){
+                    $scope.element_ok = false;
+                    try{
+                        jsonlint.parse($scope.element_str);
+                    }catch(e){
+                        console.log(e);
+                        $scope.error = e.message;
+                    }
+
+                }
+
+                if(element) {
+                    if(element.images) {
+                        element.images.forEach(function (img) {
+                            img.img = $scope.images[img.img]?$scope.images[img.img]:'404.png';
+                        });
+                    }
+                    if(element.cover) {
+                        element.cover =  $scope.images[element.cover]?$scope.images[element.cover]:'404.png';
+                        console.log($scope.images[element.cover]);
+                    }
+
+                    $scope.element = element;
+                    $scope.element_ok = true;
+                }
+
+            };
+            $scope.parse();
+
+            $scope.$watch('element_str', function(){
+                $scope.parse();
+            });
+
+            $scope.$watch('json_file', function(){
+                if($scope.json_file) {
+                    $scope.element_str = $scope.json_file;
+                }
+            });
+
+            $scope.$watch('images', function(){
+                console.log($scope.images);
+                $scope.parse();
+            }, true);
+
+
+            $scope.save = function(){
+            };
+
+            $scope.aceOption = {
+                mode: 'json',
+                useWrapMode : true,
+                theme:'twilight'
+            };
+
+        });
+
+    </script>
+
+
+    <script src="components/detail-view/detailView.js" type="text/javascript"></script>
+    <link href="components/detail-view/detailView.css" rel="stylesheet"/>
+
+
+</head>
+
+
+
+<body ng-app="galApp">
+    <div style="display:flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                position:fixed; top:0;left:0;width:100%;height:100%;
+                padding:5px;
+                background-color:whitesmoke;"
+         ng-controller="MainController as $ctrl">
+        <div style="order:1;flex-grow: 1;height:100%;display:flex;flex-direction: column;"
+             file="json_file" file-dropzone="" file-name="json_name" images="images"
+        >
+            <h2>EDITOR JSON <i style="color:#5555aa;">{{json_name?json_name:' TRASCINA JSON E IMMAGINI'}}</i></h2>
+
+            <!--
+            <textarea style="height:70%;" rows="70" cols="50" ng-model="element_str" ng-change="parse()" ng-model-options="{debounce:200}"></textarea>
+
+            <code ng-if="element_ok" style="height:30%;overflow:scroll;"  hljs hljs-language="json" hljs-source="element_str"></code>
+            -->
+            <div style="height:80%;box-shadow: 0px 3px 20px rgba(0,0,0,0.6);" ui-ace="aceOption" ng-model="element_str"></div>
+            <h3>immagini disponibili: <i style="color:darkblue; font-weight: bolder;display: inline;" ng-repeat="(name,img) in images">{{name.startsWith('__')?'':name+','}} </i></h3>
+            <pre style="padding:5px;color:{{element_ok?'green':'red'}};height: 10%">{{element_ok?'JSON CORRETTO':error}}</pre>
+        </div>
+
+        <div style="order:2; max-width:450px;padding:5px;overflow: scroll;margin-right:30px;margin-left:10px;">
+            <h3><span ng-show="element_ok">RISULTATO</span> <span ng-show="!element_ok" style="color:red">ERRORE JSON</span></h3>
+            <div style="margin-top:10px; box-shadow: 0px 3px 10px rgba(0,0,0,0.6);background-color: white;padding:5px;">
+                <detail-view element="element" gallery-open="galleryOpen"></detail-view>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
