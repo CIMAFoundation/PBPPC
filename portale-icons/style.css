@@ -1,19 +1,20 @@
 @font-face {
   font-family: 'portale';
-  src:  url('fonts/portale.eot?mkmwv7');
-  src:  url('fonts/portale.eot?mkmwv7#iefix') format('embedded-opentype'),
-    url('fonts/portale.woff2?mkmwv7') format('woff2'),
-    url('fonts/portale.ttf?mkmwv7') format('truetype'),
-    url('fonts/portale.woff?mkmwv7') format('woff'),
-    url('fonts/portale.svg?mkmwv7#portale') format('svg');
+  src:  url('fonts/portale.eot?o4ygda');
+  src:  url('fonts/portale.eot?o4ygda#iefix') format('embedded-opentype'),
+  url('fonts/portale.woff2?o4ygda') format('woff2'),
+  url('fonts/portale.ttf?o4ygda') format('truetype'),
+  url('fonts/portale.woff?o4ygda') format('woff'),
+  url('fonts/portale.svg?o4ygda#portale') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icons-"], [class*=" icons-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'portale' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,6 +26,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icons-ppc_naz:before {
+  content: "\e900";
+}
+.icons-nazionali:before {
+  content: "\e900";
+}
 .icons-piani_intercomunali:before {
   content: "\e700";
 }
@@ -52,13 +59,10 @@
 .icons-regionale:before {
   content: "\e705";
 }
-.icons-regionali:before {
-  content: "\e705";
-}
 .icons-collaboration:before {
   content: "\e706";
 }
-.icons-empowerment:before {
+.icons-enpowerment:before {
   content: "\e706";
 }
 .icons-meeting:before {

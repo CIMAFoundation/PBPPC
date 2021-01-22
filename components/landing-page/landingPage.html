@@ -47,8 +47,8 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="gal_nav">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="#gal">Home</a></li>
-                                    <li><a href="#media">MEDIA</a></li>
+<!--                                    <li><a href="#gal">Home</a></li>-->
+<!--                                    <li><a href="#media">MEDIA</a></li>-->
                                     <li><a href="index.html#!/main/mappavuota" class="gal_btn_green_menu">ACCEDI</a></li>
                                 </ul>
                             </div><!-- /.navbar-collapse -->
@@ -98,7 +98,9 @@
                  ng-style="{'-webkit-animation-delay': $index*100 + 'ms', 'animation-delay': $index*100 + 'ms'}">
 
                 <a href="#!/main/{{profile.profile_id}}">
-                    <div class="gal_min_height gal_box_category" style="background-image:url({{profile.image}}); background-repeat: no-repeat; background-size: cover; background-position: top center">
+                    <div class="gal_min_height gal_box_category"
+                         style="background-image:url({{profile.image}}); background-repeat: no-repeat; background-size: cover; background-position: top center"
+                    >
 
                         <img src="components/landing-page/img/null_image.png" alt="" class="img-responsive">
                         <div class="gal_icon_type_caption">

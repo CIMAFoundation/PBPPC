@@ -121,7 +121,15 @@ a {
 .gal_header {
   height: $height_header;
   .gal_btn_green_menu + img {margin-left:1em;}
+
+
 }
+
+.btn-back {
+  position: absolute;
+  right: 2em;
+}
+
 
 
 

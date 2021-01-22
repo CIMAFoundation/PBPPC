@@ -164,3 +164,7 @@ map-view .fill-container{
     color: #122238;
     text-shadow:0 0 2px rgba(255,255,255,0.75), 0 0 2px rgba(255,255,255,0.75), 0 0 2px rgba(255,255,255,0.75);
 }
+
+.half-opacity {
+    opacity: 0.5;
+}
