@@ -392,15 +392,15 @@ var lineExtremities = false;
                 var icon = IconService.get(entry.subcategory_id);
                 if(icon) {
                     var marker = L.marker(coords, {
-                        bounceOnAdd: true,
-                        bounceOnAddOptions: {duration: 300, height: 80},
+                        //bounceOnAdd: true,
+                        //bounceOnAddOptions: {duration: 300, height: 80},
                         icon: icon,
                         riseOnHover: true
                     });
                 }else{
                     var marker = L.marker(coords, {
-                        bounceOnAdd: true,
-                        bounceOnAddOptions: {duration: 300, height: 80},
+                        //bounceOnAdd: true,
+                        //bounceOnAddOptions: {duration: 300, height: 80},
                         riseOnHover: true
                     });
                 }
@@ -427,9 +427,9 @@ var lineExtremities = false;
                     _map.closePopup();
                     if(_map.getBounds().contains(marker.getLatLng())) {
                         marker.setZIndexOffset(1000);
-                        marker.bounce({duration: 300, height: 30}, function () {
-                            marker.openPopup();
-                        });
+                       //L.DomUtil.addClass(marker._icon, 'animated bounce delay-500');
+                       //Object.keys(_map._layers).map(k => _map._layers[k]).filter(l => l !== marker).map(m => m._icon && L.DomUtil.addClass(m._icon, 'half-opacity'))
+                       marker.openPopup();                       
                     }else{
                         arrow = service.locateOutsideMap(marker.getLatLng());
                     }
@@ -438,6 +438,10 @@ var lineExtremities = false;
                 marker.unHighlight = function(){
                     marker.setZIndexOffset(0);
                     marker.closePopup();
+                    
+                    //Object.keys(_map._layers).map(k => _map._layers[k]).filter(l => l !== marker).map(m => m._icon && L.DomUtil.removeClass(m._icon, 'half-opacity'))
+                    
+
                     if(arrow){
                         _map.removeLayer(arrow);
                     }
@@ -678,9 +682,12 @@ var lineExtremities = false;
                     if(layer.clicked){
                         layer.clicked = false;
                     }else {
+                        /*
                         layer.bounce({duration: 1000, height: 100}, function () {
                             layer.openPopup();
                         });
+                        */
+                        layer.openPopup();
                     }
                     _map.panTo(layer.getLatLng());
 
