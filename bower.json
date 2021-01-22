@@ -27,7 +27,6 @@
     "angular-animate": "^1.5.7",
     "angular-bootstrap": "^2.0.0",
     "angular-route": "^1.5.8",
-    "leaflet-bouncemarker": "leafelet-bouncemarker#*",
     "Leaflet.Polyline.SnakeAnim": "^0.1.0",
     "leaflet-geometry": "^0.4.0",
     "Leaflet.LineExtremities": "https://github.com/makinacorpus/Leaflet.LineExtremities.git#leaflet0.8-dev",
@@ -38,7 +37,8 @@
     "leaflet-geosearch": "^1.1.0",
     "angular-media-queries": "^0.6.1",
     "leaflet": "1.0",
-    "leaflet.edgebuffer": "leaflet-edgebuffer#^1.0.2"
+    "leaflet.edgebuffer": "leaflet-edgebuffer#^1.0.2",
+    "leaflet.bouncemarker": "https://github.com/maximeh/leaflet.bouncemarker.git"
   },
   "resolutions": {
     "angular": "1.5.8",
