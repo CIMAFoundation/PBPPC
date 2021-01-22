@@ -15,8 +15,7 @@
          style="text-align: center;width: 100%; background: white;"
 
     >
-        <!--ng-style="{'background-color':'rgb('+$ctrl.cover_color[0]+', '+$ctrl.cover_color[1]+', '+$ctrl.cover_color[2]+')'}"-->
-        <img class="cover-img"  ng-src="{{$ctrl.element.cover_small | djangoMedia}}" color-thief color-thief-dominant="$ctrl.cover_color">
+        <img class="cover-img" alt="cover-img" ng-src="{{$ctrl.element.cover_small | djangoMedia}}"></img>
         <div class="gal-title">
             <h2>{{$ctrl.element.name}}</h2>
             <h3 ng-if="$ctrl.element.scientific_name">{{$ctrl.element.scientific_name}}</h3>
