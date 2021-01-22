@@ -10,8 +10,7 @@
         'jkuri.gallery',
         'ui.bootstrap',
         'matchMedia',
-        'ngAnimate',
-        'ngColorThief'
+        'ngAnimate'
     ]);
 
     galApp.factory('myHttpInterceptor', function ($q) {
